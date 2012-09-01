@@ -1,3 +1,3 @@
 ArgumentContracts
 =================
-Methods for checking method arguments in .NET
+Methods for validating method arguments in .NET
