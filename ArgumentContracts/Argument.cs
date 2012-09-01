@@ -6,7 +6,7 @@
     using System.Linq.Expressions;
     using System.Runtime.CompilerServices;
 
-    using ArgumentContracts.Interfaces;
+    using ArgumentContracts.Core.Interfaces;
     using ArgumentContracts.Validators;
 
     /// <summary>

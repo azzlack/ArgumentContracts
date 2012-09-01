@@ -54,6 +54,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ArgumentContracts.Core\ArgumentContracts.Core.csproj">
+      <Project>{0bf5d12a-1562-434c-a1d2-937a9bbe582f}</Project>
+      <Name>ArgumentContracts.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArgumentContracts\ArgumentContracts.csproj">
       <Project>{e327f956-1740-4a2f-a3c9-a555008f1935}</Project>
       <Name>ArgumentContracts</Name>

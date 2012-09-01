@@ -2,7 +2,7 @@ namespace ArgumentContracts.Validators
 {
     using System;
 
-    using ArgumentContracts.Interfaces;
+    using ArgumentContracts.Core.Interfaces;
 
     /// <summary>
     /// Validator for string arguments.

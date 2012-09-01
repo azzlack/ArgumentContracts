@@ -2,7 +2,7 @@
 {
     using System;
 
-    using ArgumentContracts.Interfaces;
+    using ArgumentContracts.Core.Interfaces;
 
     /// <summary>
     /// Default argument validator.

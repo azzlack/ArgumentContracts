@@ -1,4 +1,4 @@
-﻿namespace ArgumentContracts.Interfaces
+namespace ArgumentContracts.Core.Interfaces
 {
     /// <summary>
     /// Interface for argument validators

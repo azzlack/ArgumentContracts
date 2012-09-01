@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    using ArgumentContracts.Interfaces;
+    using ArgumentContracts.Core.Interfaces;
     using ArgumentContracts.Validators;
 
     using NUnit.Framework;
