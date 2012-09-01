@@ -9,6 +9,17 @@ namespace ArgumentContracts.Validators
     /// </summary>
     public class StringArgumentValidator : ITypedArgumentValidator<string>
     {
+        private bool allowEmptyStrings;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StringArgumentValidator" /> class.
+        /// </summary>
+        /// <param name="allowEmptyStrings">if set to <c>true</c> [allow empty strings].</param>
+        public StringArgumentValidator(bool allowEmptyStrings = false)
+        {
+            this.allowEmptyStrings = allowEmptyStrings;
+        }
+
         /// <summary>
         /// Gets the argument types the validator handles.
         /// </summary>

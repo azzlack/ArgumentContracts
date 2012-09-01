@@ -11,12 +11,6 @@
     [TestFixture]
     public class DefaultArgumentValidatorTests
     {
-        [TestFixtureSetUp]
-        public void SetUp()
-        {
-            ArgumentValidators.Instance.Add(new StringArgumentValidator());
-        }
-
         [TestCase("some-string")]
         public void Require_WhenGivenValidArgument_ShouldReturnArgumentName(String s)
         {

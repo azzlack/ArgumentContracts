@@ -16,10 +16,7 @@
         /// <value>
         /// The validators.
         /// </value>
-        private static readonly IList<IArgumentValidator> Singleton = new List<IArgumentValidator>()
-            {
-                new StringArgumentValidator()
-            };
+        private static readonly ArgumentValidatorCollection Singleton = new ArgumentValidatorCollection();
 
         /// <summary>
         /// Prevents a default instance of the <see cref="ArgumentValidators" /> class from being created.
@@ -34,7 +31,7 @@
         /// <value>
         /// The argument validators.
         /// </value>
-        public static IList<IArgumentValidator> Instance
+        public static ArgumentValidatorCollection Instance
         {
             get
             {
