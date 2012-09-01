@@ -45,7 +45,7 @@
     <Compile Include="Argument.cs" />
     <Compile Include="ArgumentValidators.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Validators\ArgumentValidatorCollection.cs" />
+    <Compile Include="ArgumentValidatorCollection.cs" />
     <Compile Include="Validators\DefaultArgumentValidator.cs" />
     <Compile Include="Validators\StringArgumentValidator.cs" />
   </ItemGroup>

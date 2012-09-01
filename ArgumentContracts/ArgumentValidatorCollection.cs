@@ -1,10 +1,11 @@
-﻿namespace ArgumentContracts.Validators
+﻿namespace ArgumentContracts
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
     using ArgumentContracts.Core.Interfaces;
+    using ArgumentContracts.Validators;
 
     /// <summary>
     /// A collection of IArgumentValidator implementations.
@@ -37,17 +38,17 @@
         /// <summary>
         /// Replaces an old argument validator with a new one.
         /// </summary>
-        /// <param name="oldValidator">The old argument validator.</param>
+        /// <param name="oldValidatorType">The old argument validator type.</param>
         /// <param name="newValidator">The new argument validator.</param>
-        public void Replace(IArgumentValidator oldValidator, IArgumentValidator newValidator)
+        public void Replace(Type oldValidatorType, IArgumentValidator newValidator)
         {
-            if (this.All(x => x.GetType() != oldValidator.GetType()))
+            if (this.All(x => x.GetType() != oldValidatorType))
             {
-                throw new ArgumentException(string.Format("No validators of type '{0}' exist. Please use Add() instead.", oldValidator.GetType().FullName));
+                throw new ArgumentException(string.Format("No validators of type '{0}' exist. Please use Add() instead.", oldValidatorType.FullName));
             }
 
             // Find old validator
-            var i = this.FindIndex(x => x.GetType() == oldValidator.GetType());
+            var i = this.FindIndex(x => x.GetType() == oldValidatorType);
 
             // Add new one
             this[i] = newValidator;

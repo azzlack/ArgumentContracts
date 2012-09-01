@@ -45,7 +45,7 @@
             var v = this.validators.First();
             var n = new DefaultArgumentValidator<string>();
 
-            this.validators.Replace(v, n);
+            this.validators.Replace(v.GetType(), n);
 
             Assert.That(this.validators.First().GetType() == n.GetType());
         }
@@ -56,7 +56,7 @@
         {
             var v = new DefaultArgumentValidator<string>();
 
-            this.validators.Replace(v, new StringArgumentValidator());
+            this.validators.Replace(v.GetType(), new StringArgumentValidator());
         }
     }
 }
