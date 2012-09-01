@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgumentContracts.Core", "ArgumentContracts.Core\ArgumentContracts.Core.csproj", "{0BF5D12A-1562-434C-A1D2-937A9BBE582F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackager", "NuGetPackager\NuGetPackager.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E327F956-1740-4A2F-A3C9-A555008F1935} = {E327F956-1740-4A2F-A3C9-A555008F1935}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
