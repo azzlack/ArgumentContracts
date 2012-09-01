@@ -20,6 +20,7 @@ I.e. the equivalent of this:
 You can also create your own validators for your custom classes by implementing the `ITypedArgumentValidator<T>` interface.
 
 The register your validators like this:
+    
     ArgumentValidators.Instance.Add(new MyValidator());
 
 NOTE: The default behavior when validating strings is to use the `string.IsNullOrEmpty` method which means it will throw an exception on empty string values.
