@@ -14,10 +14,7 @@
         [TestFixtureSetUp]
         public void SetUp()
         {
-            Argument.Validators = new List<IArgumentValidator>()
-                {
-                    new StringArgumentValidator()
-                };
+            ArgumentValidators.Instance.Add(new StringArgumentValidator());
         }
 
         [TestCase("some-id")]

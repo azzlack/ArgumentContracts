@@ -1,9 +1,7 @@
 ﻿namespace ArgumentContracts
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Linq.Expressions;
     using System.Runtime.CompilerServices;
 
     using ArgumentContracts.Core.Interfaces;
@@ -14,14 +12,6 @@
     /// </summary>
     public class Argument
     {
-        /// <summary>
-        /// Gets or sets the validators.
-        /// </summary>
-        /// <value>
-        /// The validators.
-        /// </value>
-        public static IList<IArgumentValidator> Validators { get; set; }
-
         /// <summary>
         /// Validates that the argument exists.
         /// </summary>
@@ -47,7 +37,7 @@
         private static ITypedArgumentValidator<T> GetArgumentValidator<T>()
         {
             // Find validator that handles this type
-            var validator = (ITypedArgumentValidator<T>)Validators.FirstOrDefault(x => x.HandlesTypes.Contains(typeof(T)));
+            var validator = (ITypedArgumentValidator<T>)ArgumentValidators.Instance.FirstOrDefault(x => x.HandlesTypes.Contains(typeof(T)));
 
             if (validator != null)
             {
