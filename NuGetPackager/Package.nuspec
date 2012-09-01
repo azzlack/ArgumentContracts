@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Unique.App.Id</id>
+    <version>1.0.0</version>
+    <authors>Ove Andersen</authors>
+    <owners>azzlack</owners>
+    <projectUrl>https://github.com/azzlack/ArgumentContracts</projectUrl>
+    <iconUrl>http://www.eyecatch.no/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Core library for the Autoloading ServiceHost Factory.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright EyeCatch 2012</copyright>
+    <tags></tags>
+    <dependencies>
+      <dependency id="log4net" version="1.2.10" />
+      <dependency id="WebActivator" version="1.5" />
+      <dependency id="WebApi.All" version="0.6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="lib\**" target="lib" />
+    <file src="tools\**" target="tools" />
+    <file src="content\**" target="content" />
+  </files>
+</package>
