@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Unique.App.Id</id>
+    <id>ArgumentContracts</id>
     <version>1.0.0</version>
     <authors>Ove Andersen</authors>
     <owners>azzlack</owners>
@@ -9,17 +9,18 @@
     <iconUrl>http://www.eyecatch.no/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
-      Core library for the Autoloading ServiceHost Factory.
+      Helper methods for validating method arguments in .NET 4.5 and upwards.
+
+      Similar to the Code Contracts feature, but even easier to use.
     </description>
+    <summary>
+      Helper methods for validating method arguments in .NET 4.5 and upwards.
+    </summary>
     <releaseNotes>
+      Added support for requiring a value for a method argument.
     </releaseNotes>
     <copyright>Copyright EyeCatch 2012</copyright>
-    <tags></tags>
-    <dependencies>
-      <dependency id="log4net" version="1.2.10" />
-      <dependency id="WebActivator" version="1.5" />
-      <dependency id="WebApi.All" version="0.6.0" />
-    </dependencies>
+    <tags>argument property code contracts argumentnull</tags>
   </metadata>
   <files>
     <file src="lib\**" target="lib" />
